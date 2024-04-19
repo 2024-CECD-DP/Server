@@ -1,8 +1,8 @@
 spring:
   datasource:
     url : jdbc:postgresql://localhost:5432/opentutorials
-    username: ${NAME}
-    password: ${PW}
+    username: postgres #${NAME}
+    password: Wngurdl1! #${PW}
 
   jpa:
     hibernate:
@@ -11,3 +11,8 @@ spring:
       hibernate.format_sql: true
       hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+
+
+jwt:
+  expiration_time: 86400000 # 1일
+  secret: VLdaskfnsdlfnsef #TODO
