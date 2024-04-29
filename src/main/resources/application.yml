@@ -1,18 +1,17 @@
 spring:
   datasource:
-    url : jdbc:postgresql://localhost:5432/opentutorials
-    username: postgres #${NAME}
-    password: Wngurdl1! #${PW}
+    url : jdbc:postgresql://${END_POINT}:5432/DGU_CECD_DP_DB
+    username: ${NAME}
+    password: ${PW}
 
   jpa:
     hibernate:
       ddl-auto: create
     properties:
       hibernate.format_sql: true
-      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
 
 
 jwt:
   expiration_time: 86400000 # 1일
-  secret: VLdaskfnsdlfnsef #TODO
+  secret: VLdaskfnsdlfnsef #TODO 그럴싸한 key로 변경  +  UserInfo for security Context holder도 적절하게 변경
