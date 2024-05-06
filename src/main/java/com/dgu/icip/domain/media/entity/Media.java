@@ -20,6 +20,8 @@ public class Media {
     @Column(name = "media_id")
     private Long id;
 
+    private String instaMediaId; // GraphAPI로 가져온 게시글의 ID(동일한 게시물의 추이를 알아내기 위한 용도)
+
     private LocalDate collectedDate;
     private LocalDate creationData;
     private String caption;
