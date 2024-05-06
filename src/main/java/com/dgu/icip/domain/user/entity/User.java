@@ -8,8 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
+import static jakarta.persistence.InheritanceType.JOINED;
 
 @Entity
+@DiscriminatorColumn
+@Inheritance(strategy = JOINED) // 조인전략 사용
 @Table(name = "user_entity")
 public class User {
 
