@@ -4,6 +4,7 @@ import com.dgu.icip.domain.BaseTimeEntity;
 import com.dgu.icip.domain.image.entity.Image;
 import com.dgu.icip.domain.user.entity.User;
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ import static jakarta.persistence.FetchType.LAZY;
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Entity
+@Getter
 public class Media extends BaseTimeEntity {
 
     @Id

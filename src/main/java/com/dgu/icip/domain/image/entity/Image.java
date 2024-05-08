@@ -2,11 +2,13 @@ package com.dgu.icip.domain.image.entity;
 
 import com.dgu.icip.domain.media.entity.Media;
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import static jakarta.persistence.FetchType.LAZY;
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Entity
+@Getter
 public class Image {
 
     @Id
