@@ -1,5 +1,6 @@
 package com.dgu.icip.domain.media.entity;
 
+import com.dgu.icip.domain.BaseTimeEntity;
 import com.dgu.icip.domain.image.entity.Image;
 import com.dgu.icip.domain.user.entity.User;
 import jakarta.persistence.*;
@@ -13,7 +14,7 @@ import static jakarta.persistence.FetchType.LAZY;
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Entity
-public class Media {
+public class Media extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
