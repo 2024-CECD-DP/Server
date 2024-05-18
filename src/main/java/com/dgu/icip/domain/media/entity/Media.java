@@ -27,7 +27,7 @@ public class Media {
     private int likeCnt;
     private int commentCnt;
 
-    @Lob
+    @Column(columnDefinition="TEXT")
     private String caption; //Text type
 
     @Enumerated(STRING)
