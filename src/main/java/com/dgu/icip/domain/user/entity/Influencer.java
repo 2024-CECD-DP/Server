@@ -1,20 +1,27 @@
 package com.dgu.icip.domain.user.entity;
 
-import jakarta.persistence.DiscriminatorValue;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
+import com.dgu.icip.domain.meta.entity.Meta;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @DiscriminatorValue("Influencer")
 public class Influencer extends User{
 
     private String influencer_id;
 
-    @Enumerated(EnumType.STRING)
-    private Category category;
+//    @Enumerated(EnumType.STRING)
+//    private Category category;
 
     protected String instaName; // 인스타 계정 이름
 }
