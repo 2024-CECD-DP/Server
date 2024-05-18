@@ -1,12 +1,12 @@
 spring:
   datasource:
-    url : jdbc:postgresql://${end_point}:5432/DGU_CECD_DP_DB
-    username: ${NAME}
-    password: ${PW}
+    url : jdbc:postgresql://localhost:5432/postgres
+    username: 
+    password: 
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     properties:
       hibernate.format_sql: true
     show-sql: true
