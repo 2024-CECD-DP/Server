@@ -23,5 +23,5 @@ public class Influencer extends User{
 //    @Enumerated(EnumType.STRING)
 //    private Category category;
 
-    protected String instaName; // 인스타 계정 이름
+    private String instaName; // 인스타 계정 이름
 }
