@@ -24,9 +24,11 @@ public class Media {
 
     private LocalDate collectedDate;
     private LocalDate creationDate;
-    private String caption;
     private int likeCnt;
     private int commentCnt;
+
+    @Lob
+    private String caption; //Text type
 
     @Enumerated(STRING)
     private AdType type;
